@@ -32,3 +32,14 @@ jobs:
       
       - name: Deploy to AWS S3
         run: aws s3 sync dist s3://${{ secrets.S3_BUCKET_NAME }} --delete
+
+      - name: Install Postman CLI 
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+
+      - name: Run Cloudflare Clear Cache Collection
+        run: |
+          postman collection run "39583889-86d4158c-fe43-4e78-8aa8-d7c0924479d4"

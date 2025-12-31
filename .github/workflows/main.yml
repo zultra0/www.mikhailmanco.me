@@ -42,4 +42,4 @@ jobs:
 
       - name: Run Cloudflare Clear Cache Collection
         run: |
-          postman collection run "39583889-86d4158c-fe43-4e78-8aa8-d7c0924479d4" -e "39583889-1b19a3c5-2408-4376-97f3-5dc84ebaf9f7"
+          postman collection run "39583889-86d4158c-fe43-4e78-8aa8-d7c0924479d4"

@@ -17,12 +17,8 @@ function App() {
         </a>
       </div>
       <h1>Mikhail's website</h1>
-      <h2>Testing</h2>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <h2>Welcome 👋!</h2>
+      <p>Powered by S3 and Cloudflare.</p>
     </>
   )
 }

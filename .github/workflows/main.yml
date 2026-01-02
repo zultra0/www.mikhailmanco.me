@@ -19,6 +19,7 @@ jobs:
         run: |
           node -v
           npm -v
+          node --trace-deprecation
 
       - name: Dependency Installation
         run: npm install

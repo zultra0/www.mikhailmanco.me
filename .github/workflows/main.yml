@@ -17,12 +17,6 @@ jobs:
         with:
             node-version: '25.1.0'
 
-      - name: Log Node.js version
-        run: |
-          node -v
-          npm -v
-          node --trace-deprecation
-
       - name: Dependency Installation
         run: npm install
 
@@ -30,7 +24,7 @@ jobs:
         run: npm run build
       
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v5.1.1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

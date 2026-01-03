@@ -3,6 +3,7 @@ export default function App() {
     <div className="h-screen w-screen flex justify-center items-center flex-col">
       <h1>Mikhail's website</h1>
       <h1>Welcome Tailwind!</h1>
+      <p>Another contribution</p>
     </div>
   )
 }
